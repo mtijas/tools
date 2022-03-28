@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  esphome:
+    container_name: esphome
+    image: esphome/esphome:latest
+    ports:
+      - "6052:6052"
+    devices:
+      - "/dev/ttyUSB0:/dev/ttyUSB0"
